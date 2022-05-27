@@ -18,7 +18,7 @@ public class SwanMapper {
 	protected static String[] getNullPropertyNames (Object source) {
 	     final BeanWrapper beanWrapper = new BeanWrapperImpl(source);
 	     java.beans.PropertyDescriptor[] pds = beanWrapper.getPropertyDescriptors();
-	     Set<String> emptyNames = new HashSet<String>();
+	     Set<String> emptyNames = new HashSet<>();
 	     for(java.beans.PropertyDescriptor pd : pds) {
 	       
 	       Object srcValue = beanWrapper.getPropertyValue(pd.getName());
